@@ -1,0 +1,556 @@
+
+/* Latest Courses List Styles */
+.latest-courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.course-list-item {
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.course-list-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.bg-success-subtle {
+    background-color: rgba(25, 135, 84, 0.1);
+}
+
+.course-meta {
+    font-size: 0.813rem;
+    color: #6c757d;
+}
+
+.course-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+/* Responsive adjustments for list view */
+@media (max-width: 768px) {
+    .course-list-item {
+        padding: 1rem;
+    }
+    
+    .course-meta {
+        gap: 0.75rem;
+    }
+}
+
+
+
+
+.courses-container {
+    padding: 1rem;
+    margin-bottom: 90px;
+}
+.smaller {
+    font-size: 0.75rem;
+}
+.badge {
+    font-weight: normal;
+}
+.rounded-4 {
+    border-radius: 0.75rem;
+}
+img {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.filter-pills .badge {
+    white-space: nowrap;
+}
+.category-item {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+}
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 7px 7px 15px #d9d9d9, -7px -7px 15px #ffffff;
+}
+.icon-wrapper {
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.icon-wrapper i {
+    color: white;
+}
+.trending-slider {
+    position: relative;
+    padding: 0.5rem 0;
+    margin: 0 -8px;
+}
+.slider-container {
+    overflow: hidden;
+    margin: 0 8px;
+    position: relative;
+}
+.trending-wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+    gap: 16px;
+}
+.trending-card {
+    flex: 0 0 auto;
+    width: 200px;
+}
+.img-wrapper {
+    height: 120px;
+    overflow: hidden;
+}
+.img-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.card:hover .img-wrapper img {
+    transform: scale(1.05);
+}
+.card {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+.badge {
+    font-size: 0.98rem;
+    padding: 0.25rem 0.5rem;
+}
+.slider-controls .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.slider-controls .dot.active {
+    background-color: #007bff;
+    width: 24px;
+    border-radius: 4px;
+}
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.slider-btn:hover {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.next-btn {
+    right: 1px;
+}
+.play-pause-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+.play-pause-btn i {
+    font-size: 20px;
+}
+.fix-osahan-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 3px;
+}
+
+.featured-banner .banner-content {
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+}
+
+.featured-banner .display-5 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.featured-banner .btn-success {
+    background-color: #00ab55;
+    border-color: #00ab55;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.featured-banner .btn-success:hover {
+    background-color: #008f47;
+    border-color: #008f47;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-banner .banner-image {
+    height: 190px;
+    object-fit: contain;
+    object-position: right bottom;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.video-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.video-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.creator-info {
+    gap: 10px;
+}
+
+.creator-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.creator-details {
+    flex: 1;
+}
+
+.creator-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.location-text {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.video-stats {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+}
+
+.views {
+    color: #888;
+}
+
+.duration-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.img-wrapper {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.img-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.card:hover .img-wrapper img {
+    transform: scale(1.05);
+}
+.course-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* Course Image Overlay Styles */
+    .course-image-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+    .course-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1; /* Changed from 0 to 1 */
+    }
+    .play-button {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transform: scale(1); /* Changed from 0.8 to 1 */
+        animation: pulse 1.5s infinite; /* Added animation by default */
+    }
+    .play-button i {
+        color: #0066b2;
+        font-size: 24px;
+        margin-left: 4px;
+    }
+    /* Keeping the pulse animation only on hover */
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        }
+    }
+    .play-button:hover {
+        animation: pulse 1.5s infinite;
+    }
+    .bg-gradient {
+        background: linear-gradient(45deg, #007bff, #00bcd4);
+        border: none;
+        padding: 0.35rem 0.75rem;
+    }
+    .card-title {
+        font-size: 1rem;
+        color: #2c3e50;
+        line-height: 1.4;
+    }
+    .instructor-name {
+        color: #6c757d;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .price-tag {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #007bff;
+    }
+    .course-meta {
+        font-size: 0.75rem;
+        color: #6c757d;
+    }
+    .rating-badge {
+        background: rgba(255, 193, 7, 0.1);
+        padding: 0.25rem 0.5rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .live-badge {
+        color: #dc3545;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .views-count, .lessons-count, .duration, .level {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    /* Horizontal Scroll Styles */
+    .courses-slider {
+        position: relative;
+        overflow: hidden;
+        margin: 0 -1rem;
+        padding: 0.5rem 1rem;
+    }
+    .courses-wrapper {
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        -webkit-overflow-scrolling: touch;
+        padding: 0.5rem 0;
+    }
+    .courses-wrapper::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    .course-card {
+        flex: 0 0 300px; /* Fixed width for each card */
+        scroll-snap-align: start;
+        background: #ffffff;
+        border-radius: 1rem;
+        padding: 0.75rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+    /* Update existing course card styles */
+    .course-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .course-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.75rem;
+        aspect-ratio: 16/9;
+    }
+    .course-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    /* Add smooth scroll behavior */
+    .courses-wrapper {
+        scroll-behavior: smooth;
+    }
+    /* Add scroll indicators */
+    .courses-slider::before,
+    .courses-slider::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        pointer-events: none;
+        z-index: 1;
+    }
+    .courses-slider::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    }
+    .courses-slider::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .course-card {
+            flex: 0 0 260px; /* Slightly smaller cards on mobile */
+        }
+    }
+    /* Pagination Styles */
+    .pagination {
+        gap: 5px;
+    }
+    .pagination .page-link {
+        border-radius: 8px;
+        padding: 8px 16px;
+        color: #666;
+        border: 1px solid #dee2e6;
+        transition: all 0.3s ease;
+    }
+    .pagination .page-item.active .page-link {
+        background-color: #0066b2;
+        border-color: #0066b2;
+        color: white;
+    }
+    .pagination .page-link:hover:not(.disabled) {
+        background-color: #e9ecef;
+        border-color: #dee2e6;
+        color: #0066b2;
+    }
+    .pagination .page-item.disabled .page-link {
+        color: #6c757d;
+        pointer-events: none;
+        background-color: #fff;
+        border-color: #dee2e6;
+    }

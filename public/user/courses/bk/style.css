@@ -1,0 +1,253 @@
+.preview-image {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+.topic-card {
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.progress {
+    height: 20px;
+    margin-top: 10px;
+}
+.form-label {
+    font-weight: 500;
+}
+.tooltip-icon {
+    color: #6c757d;
+    cursor: pointer;
+}
+/* Mobile-friendly styles */
+.nav-tabs .nav-link {
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #6c757d;
+}
+.nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid #0d6efd;
+    color: #0d6efd;
+}
+.tab-content {
+    padding-top: 1.5rem;
+}
+.collapsible-section {
+    margin-bottom: 1rem;
+}
+.collapsible-header {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.collapsible-content {
+    padding: 1rem;
+    display: none;
+}
+.fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+}
+@media (max-width: 768px) {
+    .fab {
+        display: flex;
+    }
+    .container {
+        padding-bottom: 80px;
+    }
+    .nav-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    }
+    .nav-tabs::-webkit-scrollbar {
+        display: none;
+    }
+}
+ 
+.vh-100 {
+    height: unset !important;
+}
+.progress-bar-custom {
+    height: 100%;
+    width: 0;
+    background: #0d6efd;
+    transition: width 0.3s ease;
+}
+/* Tab transition animations */
+.tab-pane {
+    transition: opacity 0.3s ease;
+}
+.tab-pane:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+}
+.tab-pane.active {
+    opacity: 1;
+}
+
+/* Upload Zone Styles */
+.upload-zone {
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-zone:hover {
+    border-color: #0d6efd;
+    background: #f1f7ff;
+}
+
+.upload-zone.drag-over {
+    border-color: #0d6efd;
+    background: #e6f0ff;
+    transform: scale(1.01);
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.upload-zone:hover .upload-icon {
+    color: #0d6efd;
+    transform: translateY(-5px);
+}
+
+.upload-text {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.upload-info {
+    font-size: 0.875rem;
+    color: #adb5bd;
+}
+
+.preview-container {
+    margin-top: 1rem;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.preview-container img,
+.preview-container video {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.remove-preview {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    color: #dc3545;
+}
+
+.remove-preview:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.upload-progress {
+    position: relative;
+    height: 4px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    position: absolute;
+    height: 100%;
+    background: #0d6efd;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.file-input {
+    display: none;
+}
+
+/* Toast Styles */
+.toast {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+}
+
+.toast.success {
+    border-left: 4px solid #28a745;
+}
+
+.toast.success i {
+    color: #28a745;
+}
+
+.toast.error {
+    border-left: 4px solid #dc3545;
+}
+
+.toast.error i {
+    color: #dc3545;
+}
+
+.toast.warning {
+    border-left: 4px solid #ffc107;
+}
+
+.toast.warning i {
+    color: #ffc107;
+}
+
+.toast-body {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.toast .btn-close {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.toast .btn-close:hover {
+    opacity: 1;
+}

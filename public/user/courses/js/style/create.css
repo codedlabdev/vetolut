@@ -1,0 +1,146 @@
+.logout{
+    display: none !important;
+}
+
+/* Preview containers */
+.preview-container {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-image {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.preview-video {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.section {
+    transition: all 0.3s ease;
+    margin-bottom: 30px!important;
+}
+
+.btn-primary {
+    width: 100%; /* Full width of the container */
+    background-color: #010203;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Increased font size for better visibility */
+    margin: 4px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.mb-4 {
+    width: 100%;
+    /* Removed max-width to allow for full width button */
+}
+
+.section-form {
+    padding: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-top: 1rem;
+    background-color: #fff;
+}
+
+.form-floating {
+    margin-bottom: 1rem;
+}
+
+.form-floating textarea {
+    height: 100px !important;
+}
+
+.video-upload-container {
+    border: 2px dashed #dee2e6;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.video-upload-container:hover {
+    border-color: #0d6efd;
+}
+
+#toggleSectionFormBtn {
+    width: auto !important;
+    min-width: 120px;
+}
+
+.section-item {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+}
+
+.section-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate__fadeIn {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.section-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.section-content.show {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,56 @@
+body {
+  font-family: "OpenSans", sans-serif;
+}
+.avx-feedback-float-icon {
+  position: absolute;
+  bottom: 120px;
+  right: 40px;
+  z-index: 2;
+}
+
+.avx-feedback-float-icon .fb-float-icon {
+    padding: 11px;
+    background: #003366;
+    border-radius: 20px 20px 20px 20px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.5s;
+    cursor: pointer !important;
+    box-shadow: 2px 5px 16px #003360;
+    animation-name: avx-floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.avx-feedback-float-icon .fb-float-icon:hover {
+       animation-play-state: paused;
+}
+
+.avx-feedback-float-icon .fb-float-icon span {
+  padding: 1px 8px;
+  margin-left: 5px;
+  transition: 0.5s;
+  background: unset;
+  font-size: 30px;
+}
+
+.avx-feedback-float-icon .fb-float-icon span:hover {
+   color: #11100f;
+}
+
+@keyframes avx-floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+@keyframes avx-shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
+}

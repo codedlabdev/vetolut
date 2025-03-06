@@ -1,0 +1,324 @@
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .post {
+      background-color: white;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-header .post-user {
+      font-weight: bold;
+    }
+
+    .post-header .post-time {
+      color: #888;
+      font-size: 12px;
+    }
+
+    .post-content {
+      margin-bottom: 10px;
+    }
+
+    .post-content img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .post-footer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px solid #e9e9e9;
+    }
+
+    .post-footer div {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: #555;
+    }
+
+    .post-footer div:hover {
+      color: #1877f2;
+    }
+
+    .post-footer div i {
+      margin-right: 5px;
+    }
+
+    .comments-section {
+      border-top: 1px solid #e9e9e9;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+    .comment {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .comment img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .comment-content {
+      background-color: #f0f2f5;
+      border-radius: 18px;
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+
+    .comment-box {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .comment-box input {
+      width: 100%;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    .comment-box button {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 8px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+
+
+    .ai-interaction {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .ai-interaction h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .input-container {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: white;
+    }
+
+    .input-container input {
+      border: none;
+      outline: none;
+      flex-grow: 1;
+      font-size: 14px;
+      padding-left: 10px;
+      color: #555;
+    }
+
+    .input-container input::placeholder {
+      color: #aaa;
+    }
+
+    .input-container i {
+      font-size: 18px;
+      margin: 0 8px;
+      color: #17a2b8;
+      cursor: pointer;
+    }
+
+    .input-container i:hover {
+      color: #0d6efd;
+    }
+
+
+     /* Tabs Section */
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #666;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    .tab:hover,
+    .tab.active {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+    }
+
+    /* Network Tabs Section */
+    .network-tabs {
+      display: flex;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .network-tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #666;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    .network-tab:hover,
+    .network-tab.active {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+    }
+
+    /* Hide all tab-content by default */
+    .tab-content {
+      display: none;
+    }
+
+    /* Show active tab-content */
+    .tab-content.active {
+      display: block;
+    }
+
+    .network-tab-content {
+      display: none;
+    }
+
+    .network-tab-content.active {
+      display: block;
+    }
+
+    .recent-updates {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .recent-updates::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .recent-updates::-webkit-scrollbar-thumb {
+      background: #003366;
+      border-radius: 5px;
+    }
+
+    .recent-updates::-webkit-scrollbar-track {
+      background: #f0f2f5;
+    }
+
+    /* Card Styles */
+    .card {
+      flex: 0 0 80%;
+      max-width: 220px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      scroll-snap-align: start;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 1.1rem;
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .card-content .date {
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    /* Button Section */
+    .card-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+    }
+
+    .card-buttons button {
+      background: none;
+      border: none;
+      color: #555;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .card-buttons button:hover {
+      color: #003366;
+    }
+
+    .card-buttons i {
+      font-size: 1.1rem;
+    }
+
+    /* Network Section */
+    .network-section {
+      margin-top: 40px;
+    }

@@ -1,0 +1,15 @@
+{
+    "require": {
+        "google/apiclient": "^2.18",
+        "league/oauth2-client": "*",
+        "php-http/curl-client": "^2.3",
+        "guzzlehttp/psr7": "^2.7",
+        "facebook/graph-sdk": "^5.1",
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
