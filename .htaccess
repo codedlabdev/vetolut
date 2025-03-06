@@ -1,0 +1,21 @@
+# Enable URL includes
+php_flag allow_url_include On
+
+RewriteEngine On
+
+# Redirect root to the login page without changing the URL
+RewriteRule ^$ /vetoluz/public/auth/login_user.php [L]
+
+# Prevent rewriting of static files (like CSS, JS, images)
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule \.(css|js|jpg|png|gif|jpeg|ico|svg|webp)$ - [L]
+
+# Remove .php extension from all URLs for PHP files in public directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ public/$1.php [L]
+
+# Optionally, handle any other requests in public directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L]
