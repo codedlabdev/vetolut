@@ -4,7 +4,7 @@ php_flag allow_url_include On
 RewriteEngine On
 
 # Redirect root to the login page without changing the URL
-RewriteRule ^$ /vetoluz/public/auth/login_user.php [L]
+RewriteRule ^$ /vetolut/public/auth/login_user.php [L]
 
 # Prevent rewriting of static files (like CSS, JS, images)
 RewriteCond %{REQUEST_FILENAME} -f
